@@ -1,0 +1,12 @@
+def alphabet_position(text):
+    text = ''.join([i for i in text.lower() if text.isalpha()])
+    alphabet = list('abcdefghijklmnopqrstuvwxyz')
+    index = []
+    for x in text:
+        y = int(alphabet.index(x))
+        index.append(y+1)
+    final = ' '.join(str(i) for i in index)
+    return final
+
+
+alphabet_position('lmaoooooo')
